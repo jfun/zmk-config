@@ -43,20 +43,20 @@
                                 &kp LGUI &mo 1 &kp LALT &mo 2 &kp SPACE &kp RALT
                         >;
                 };
-//                 number_layer {
-//                         label = "NUMBER";
-// // -----------------------------------------------------------------------------------------
-// // | ~    |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  |  \   |
-// // | ` CTL|  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
-// // | SHFT |  [  |  ]  |  {  |  }  |  _  |   |     |     |     |  +  |  =  | "|"  |
-// //                    | GUI | LWR | LGUI|   | ENT |     | ALT |
-//                         bindings = <
-//    &kp TILDE       &kp EXCL &kp AT   &kp HASH &kp DLLR &kp PRCNT &kp CARET &kp AMPS &kp KP_MULTIPLY &kp LPAR  &kp RPAR  &kp BSLH
-//    &mt LCTRL GRAVE &kp N1   &kp N2   &kp N3   &kp N4   &kp N5    &kp N6    &kp N7   &kp N8          &kp N9    &kp N0    &kp DASH
-//    &kp LSHIFT      &kp LBKT &kp RBKT &kp LBRC &kp RBRC &kp UNDER &none     &none    &none           &kp PLUS  &kp EQUAL &kp PIPE
-//                                 &kp LCTRL &trans &kp LGUI      &kp RET  &trans   &kp RALT
-//                         >;
-//                 };
+                number_layer {
+                        label = "NUMBER";
+// -----------------------------------------------------------------------------------------
+// | ~    |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  |  \   |
+// | ` CTL|  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
+// | SHFT |  [  |  ]  |  {  |  }  |  _  |   |     |     |     |  +  |  =  | "|"  |
+//                    | GUI | LWR | LGUI|   | ENT |     | ALT |
+                        bindings = <
+   &kp TILDE       &kp EXCL &kp AT   &kp HASH &kp DLLR &kp PRCNT &kp CARET &kp AMPS &kp KP_MULTIPLY &kp LPAR  &kp RPAR  &kp BSLH
+   &mt LCTRL GRAVE &kp N1   &kp N2   &kp N3   &kp N4   &kp N5    &kp N6    &kp N7   &kp N8          &kp N9    &kp N0    &kp DASH
+   &kp LSHIFT      &kp LBKT &kp RBKT &kp LBRC &kp RBRC &kp UNDER &none     &none    &none           &kp PLUS  &kp EQUAL &kp PIPE
+                                &kp LCTRL &trans &kp LGUI      &kp RET  &trans   &kp RALT
+                        >;
+                };
 //                 fn_layer {
 //                         label = "FN";
 // // -----------------------------------------------------------------------------------------
