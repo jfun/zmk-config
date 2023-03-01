@@ -14,7 +14,16 @@
     zmk,matrix_transform = &default_transform;
     //zmk,matrix_transform = &five_column_transform;
   };
+    behaviors {
+        bspcdel: backspace_delete {
+            compatible = "zmk,behaviour-mod-morph";
+            label = "BACKSPACE_DELETE";
+            bindings = <&kp BSPC>, <&kp DELETE>;
+            mods = <(MOD_LSHFT)>;
+        };
+    };
 };
+
 
 // / {
 //   conditional_layers {
@@ -37,7 +46,7 @@
 // | SHFT |  ;  |  Q  |  J  |  K  |  X  |   |  B  |  M   |  W  |  V  |  Z  | /    |
 //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
                         bindings = <
-   &kp TAB       &kp SQT  &kp COMMA &kp DOT   &kp P &kp Y    &kp F &kp G     &kp C    &kp R &kp L &kp BSPC
+   &kp TAB       &kp SQT  &kp COMMA &kp DOT   &kp P &kp Y    &kp F &kp G     &kp C    &kp R &kp L &bspcdel
    &mt LALT ESC &kp A    &kp O     &kp E     &kp U &kp I    &kp D &kp H     &kp T    &kp N &kp S &kp RET
    &kp LSHFT     &kp SEMI &kp Q     &kp J     &kp K &kp X    &kp B &kp M     &kp W    &kp V &kp Z &kp FSLH
                                 &kp LCTRL &mo 1 &kp LGUI &mo 2 &kp SPACE &kp RALT
