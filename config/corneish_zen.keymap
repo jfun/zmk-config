@@ -14,10 +14,14 @@
     zmk,matrix_transform = &default_transform;
     //zmk,matrix_transform = &five_column_transform;
   };
+};
+
+/ {
     behaviors {
         bspcdel: backspace_delete {
             compatible = "zmk,behaviour-mod-morph";
             label = "BACKSPACE_DELETE";
+            #binding-cells = <0>
             bindings = <&kp BSPC>, <&kp DELETE>;
             mods = <(MOD_LSHFT)>;
         };
